@@ -4,7 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            margin: 0;
+        }
+        footer {
+            background-color: #2C3E50;
+            color: white;
+        }
+
+        .footer-row {
+            display: flex;
+            justify-content: space-around; /* Centra las columnas horizontalmente */
+            gap: 40px; /* Espacio entre columnas */
+            flex-wrap: wrap; 
+        }
+
+        .footer-column {
+            text-align: left; /* Alinea el texto de las columnas a la izquierda */
+        }
+
+        h5{
+            margin-top: 0px;
+            margin-bottom: 5px;
+            font-size: 18px;
+        }
+        .footer-column p {
+            line-height: 0.8;
+        }
+
+
+        .social-icons img {
+            width: 30px; /* Ajusta el tamaño de las imágenes */
+            margin-right: 10px; /* Espacio entre imágenes */
+            margin-top: 60px;
+        }
+
+
+    @media (max-width: 768px) {
+        .footer-row {
+            justify-content: center; /* Centra las columnas en pantallas pequeñas */
+            gap: 20px; /* Espacio reducido entre columnas */
+        }
+
+        .footer-column {
+            flex: 1 1 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+            text-align: center; /* Centra el texto */
+            margin-bottom: 15px; /* Espacio entre columnas */
+        }
+
+        .social-icons img {
+            width: 25px; /* Tamaño más pequeño para los íconos sociales */
+            margin-top: 20px;
+        }
+    }
+    </style>
 </head>
 <body>
 

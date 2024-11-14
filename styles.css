@@ -215,3 +215,18 @@
     margin-right: 10px; 
   }
   
+
+/* Estilos del registro */
+.form-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  min-height: 100vh; 
+  box-sizing: border-box; 
+}
+.form-card {
+  max-width: 600px; 
+  width: 100%; 
+  margin: 0 auto; 
+}

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registrarse</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <iframe src="header.html" width="100%" height= "120px" frameborder="0"></iframe>
+
+    <div class="form-container">
+        <div class="w3-container w3-card-4 w3-light-grey w3-text-blue w3-margin form-card">
+        <h2 class="w3-center">Registrarse</h2>
+
+        <form class="w3-container" action="procesar_registro.php" method="POST">
+            <!-- Campo Nombre Completo -->
+            <div class="w3-section">
+                <label for="nombreCompleto" class="w3-text-black"><b>Nombre Completo</b></label>
+                <input type="text" name="nombreCompleto" id="nombreCompleto" placeholder="Ingrese su nombre completo" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Teléfono -->
+            <div class="w3-section">
+                <label for="telefono" class="w3-text-black"><b>Teléfono</b></label>
+                <input type="tel" name="telefono" id="telefono" placeholder="Ingrese su nro de telefono" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Provincia -->
+            <div class="w3-section">
+                <label for="provincia" class="w3-text-black"><b>Provincia</b></label>
+                <input type="text" name="provincia" id="provincia" placeholder="Ingrese su provincia" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Localidad -->
+            <div class="w3-section">
+                <label for="localidad" class="w3-text-black"><b>Localidad</b></label>
+                <input type="text" name="localidad" id="localidad" placeholder="Ingrese su localidad" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Dirección -->
+            <div class="w3-section">
+                <label for="direccion" class="w3-text-black"><b>Dirección</b></label>
+                <input type="text" name="direccion" id="direccion" placeholder="Ingrese su direccion" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Email -->
+            <div class="w3-section">
+                <label for="email" class="w3-text-black"><b>Email</b></label>
+                <input type="email" name="email" id="email" placeholder="Ingrese su email" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Campo Contraseña -->
+            <div class="w3-section">
+                <label for="password" class="w3-text-black"><b>Contraseña</b></label>
+                <input type="password" name="password" id="password" placeholder="Ingrese su contraseña" class="w3-input w3-border" required>
+            </div>
+
+            <!-- Botón de Enviar -->
+            <div class="w3-section">
+                <button type="submit" class="w3-button w3-blue w3-block">Registrarse</button>
+            </div>
+
+            <!-- Enlace Ya tengo cuenta -->
+            <div class="w3-center w3-section">
+                <a href="login.html" class="w3-text-blue">Ya tengo una cuenta</a>
+            </div>
+        </form>
+    </div>
+</div>
+    <iframe src="footer.html" width="100%" height="210px" frameborder="0"></iframe>
+</body>
+</html>
