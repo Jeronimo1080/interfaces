@@ -3,9 +3,13 @@
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
+    overflow: hidden; 
   }
   iframe{
     display: block;
+  }
+  a{
+    text-decoration: none;
   }
   
   /* Estilos del encabezado */
@@ -110,14 +114,13 @@
   }
   
   
-  
   /* Estilos de los productos destacados */
   .containerDestacados {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, auto);
-    grid-gap: 200px;
-    margin: 30px 50px;
+    grid-gap: 150px 100px;
+    margin: 0px 50px;
     
   }
   
@@ -131,28 +134,84 @@
   }
   
   .product-card img {
-    width: 50%;
+    width: 25%;
     height: auto;
     border-radius: 8px;
   }
   
   .product-card h3 {
     margin-top: 10px;
-    font-size: 25px;
+    font-size: 20px;
     font-weight: bold;
   }
+
+  .containerDestacados .product-card {
+    transition: transform 0.3s ease;
+  }
+
+  .containerDestacados .product-card:hover {
+    transform: scale(1.05);
+  }
+
   
   /* Estilos de las marcas */
-  .carousel-container {
-    width: 100%; 
-    overflow: hidden; 
+  .carousel {
     display: flex;
-    justify-content: center;
-    margin-top: 20px;
-}
+    justify-content: space-around; 
+    align-items: center; 
+    margin-bottom: 10px;
+    }
 
-/* Estilos para las imágenes en el carrusel */
+  .carousel img {
+    max-width: 200px; 
+    height: 200px;
+    transition: transform 0.3s ease;
+  } 
 
-  
+  .carousel img:hover {
+    transform: scale(1.05);
+  }
+
   /* Estilos del pie de página */
+
+  footer {
+    background-color: #2C3E50;
+    color: white;
+    height: auto;
+  }
+  .footer-columna a {
+  color: white; /* Hace que el texto de los enlaces sea blanco */
+  text-decoration: none; /* Quita el subrayado */
+  }
+
+  .footer-row {
+    display: flex;
+    justify-content: space-around; 
+    gap: 40px; 
+  }
+
+  .footer-columna {
+    text-align: left; 
+  }
+
+  h5{
+    margin-top: 5px;
+    font-size: 18px;
+  }
+
+  .footer-columna p {
+    line-height: 0.8;
+  }
+
+  .footer-imagenes{
+    display: flex;
+    justify-content: center; /* Centra las imágenes horizontalmente */
+    margin-top: 75px;
+    gap: 10px;
+  }
+
+  .footer-columna img {
+    width: 30px; 
+    margin-right: 10px; 
+  }
   

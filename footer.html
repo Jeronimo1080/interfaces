@@ -4,78 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Footer</title>
-    <style>
-        body {
-            margin: 0;
-        }
-        footer {
-            background-color: #2C3E50;
-            color: white;
-        }
-
-        .footer-row {
-            display: flex;
-            justify-content: space-around; /* Centra las columnas horizontalmente */
-            gap: 40px; /* Espacio entre columnas */
-        }
-
-        .footer-column {
-            text-align: left; /* Alinea el texto de las columnas a la izquierda */
-        }
-
-        h5{
-            margin-top: 0px;
-            margin-bottom: 5px;
-            font-size: 18px;
-        }
-        .footer-column p {
-            line-height: 0.8;
-        }
-
-
-        .social-icons img {
-            width: 30px; /* Ajusta el tamaño de las imágenes */
-            margin-right: 10px; /* Espacio entre imágenes */
-            margin-top: 60px;
-        }
-
-
-    </style>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
     <footer class="footer-row">
 
-            <div class="footer-column">
-                <h5>Categorías</h5>
-                <p>Ofertas</p>
-                <p>Medicamentos</p>
-                <p>Bebés y maternidad</p>
-                <p>Cuidado personal</p>
-                <p>Perfumería</p>
-                <p>Nutrición</p>
-            </div>
+        <div class="footer-columna">
+            <h5>Categorías</h5>
+            <a href="#"><p>Ofertas</p></a>
+            <a href="#"><p>Medicamentos</p></a>
+            <a href="#"><p>Bebés y maternidad</p></a>
+            <a href="#"><p>Cuidado personal</p></a>
+            <a href="#"><p>Perfumería</p></a>
+            <a href="#"><p>Nutrición</p></a>
+        </div>
 
-            <div class="footer-column">
-                <h5>Compra online</h5>
-                <p>Pedidos</p>
-                <p>Cómo comprar</p>
-                <p>Botón de arrepentimiento</p>
-            </div>
+        <div class="footer-columna">
+            <a href="#"><h5>Compra online</h5></a>
+            <a href="#"><p>Pedidos</p></a>
+            <a href="#"><p>Cómo comprar</p></a>
+            <a href="#"><p>Botón de arrepentimiento</p></a>
+        </div>
 
-            <div class="footer-column">
-                <h5>Atención al cliente</h5>
-                <p>info@farmaclub.com.ar</p>
-                <p>tel: +54 1133935437</p>
-                <div class="social-icons">
-                    <img src="images/instagram.png" alt="Instagram">
-                    <img src="images/twitter.png" alt="Twitter">
-                    <img src="images/tiktok.png" alt="TikTok">
-                </div>
+        <div class="footer-columna">
+            <h5>Atención al cliente</h5>
+            <p>info@farmaclub.com.ar</p>
+            <p>tel: +54 1133935437</p>
+            <div class="footer-imagenes">
+                <a href="https://www.instagram.com" target="_blank">
+                    <img src="images/instagram.png" alt="Instagram" class="imagenBlanca">
+                </a>
+                <a href="https://www.twitter.com" target="_blank">
+                    <img src="images/twitter.png" alt="Twitter" class="imagenBlanca">
+                </a>
+                <a href="https://www.tiktok.com" target="_blank">
+                    <img src="images/tiktok.png" alt="TikTok" class="imagenBlanca">
+                </a>
             </div>
+            
         </div>
     </footer>
-
 </body>
 </html>
 
