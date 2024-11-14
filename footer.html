@@ -17,6 +17,7 @@
             display: flex;
             justify-content: space-around; /* Centra las columnas horizontalmente */
             gap: 40px; /* Espacio entre columnas */
+            flex-wrap: wrap; 
         }
 
         .footer-column {
@@ -40,6 +41,23 @@
         }
 
 
+    @media (max-width: 768px) {
+        .footer-row {
+            justify-content: center; /* Centra las columnas en pantallas pequeñas */
+            gap: 20px; /* Espacio reducido entre columnas */
+        }
+
+        .footer-column {
+            flex: 1 1 100%; /* Las columnas ocupan el 100% del ancho en pantallas pequeñas */
+            text-align: center; /* Centra el texto */
+            margin-bottom: 15px; /* Espacio entre columnas */
+        }
+
+        .social-icons img {
+            width: 25px; /* Tamaño más pequeño para los íconos sociales */
+            margin-top: 20px;
+        }
+    }
     </style>
 </head>
 <body>
