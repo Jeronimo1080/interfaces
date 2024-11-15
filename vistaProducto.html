@@ -29,7 +29,7 @@ padding: 2rem;
       font-size: 20px;
       display: flex;
       justify-content: center;
-      margin-bottom: 20px;
+      margin: 25px 5px;
       }
     .container {
     max-width: 1500px;
@@ -99,8 +99,8 @@ padding: 2rem;
   border: none;
   padding: 10px 20px;
   cursor: pointer;
-  width: 50%;
-  border-radius: 15px;
+  width: 40%;
+  border-radius: 25px;
 }
 
 .related-products {
@@ -172,6 +172,48 @@ padding: 2rem;
   border-radius: 25px;
 }
 
+@media (max-width: 767px) {
+            .main-content {
+                grid-template-columns: 1fr;
+            }
+
+            .image-container {
+              flex-direction: column-reverse;
+                align-items: center;
+            }
+
+            .small-images {
+                flex-direction: row;
+                margin-right: 0;
+                margin-bottom: 1rem;
+            }
+
+            .small-images img {
+                width: 40px;
+                height: auto;
+                margin: 5px;
+            }
+
+            .main-image {
+                max-width: 100%;
+            }
+
+            .cards {
+                grid-template-columns: repeat(1, 1fr);
+                gap: 25px;
+            }
+            .card{
+              padding: 10px;
+            }
+
+            .add-to-cart{
+              width: 70%;
+            }
+           .subTitulo{
+            width: 100%;
+            font-size: 18px;
+           }
+        }
 
     </style>
 </head>
@@ -204,7 +246,7 @@ padding: 2rem;
           </div>
         </div>
 
-        <h3 class="subTitulo">También te pueden interesar estos productos...</h3>
+        <h3 class="subTitulo">Te pueden interesar estos productos...</h3>
         <div class="cards">
           <div class="card">
             <img src="images/4.jpg" alt="Product Image">
