@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaClick - Carrito</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="carrito.css">
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="120px" frameborder="0"></iframe>
+
+    <main class="cart-container">
+        <h3 class="cart-title">
+            <img src="images/carrito.png" alt="carrito" style="max-height: 25px; margin-right: 10px;"> Mi Carrito
+        </h3>
+        <hr>
+
+        <div class="cart-content">
+            <div class="product-list">
+                <div class="product-item">
+                    <img src="images/buscapina.png" alt="Buscapina" class="product-image">
+                    <div class="product-details">
+                        <p>Buscapina Grageas X 20</p>
+                        <span class="price">$3,000,00</span>
+                        <input type="number" value="2" class="quantity" min="1">
+                        <span class="subtotal">$6,000,00</span>
+                    </div>
+                </div>
+                <div class="product-item">
+                    <img src="images/tafirol.png" alt="Tafirol Forte" class="product-image">
+                    <div class="product-details">
+                        <p>Tafirol Forte X 30</p>
+                        <span class="price">$2,000,00</span>
+                        <input type="number" value="1" class="quantity" min="1">
+                        <span class="subtotal">$2,000,00</span>
+                    </div>
+                </div>
+                <a href="index.html" class="continue-shopping">← Seguir comprando</a>
+            </div>
+
+            <div class="purchase-summary">
+                <h4>Resumen de compra</h4>
+                <div class="summary-item">
+                    <span>Subtotal</span>
+                    <span>$8,000,00</span>
+                </div>
+                <div class="summary-item">
+                    <span>Envío</span>
+                    <span>$1,000,00</span>
+                </div>
+                <div class="summary-total">
+                    <span>Total</span>
+                    <span>$9,000,00</span>
+                </div>
+                <button class="checkout-btn">Finalizar compra</button>
+            </div>
+        </div>
+    </main>
+
+    <iframe src="footer.html" width="100%" height="220px" frameborder="0"></iframe>
+</body>
+</html>
