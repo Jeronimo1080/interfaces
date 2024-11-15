@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>FarmaClick perfil</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
     body {
       margin: 0;
@@ -147,6 +148,26 @@
       height: 28px;
       line-height: 20px;
     }
+
+    @media (max-width: 768px) {
+    .container {
+      flex-direction: column; /* Apila los elementos verticalmente */
+      gap: 5rem;
+    }
+
+    .card {
+      width: 90%; /* Ocupa casi todo el ancho disponible */
+      margin: 0 auto; /* Centra la tarjeta */
+    }
+
+    .button {
+      width: 100%; /* Botón ocupa todo el ancho del contenedor */
+    }
+
+    .prescription-item img {
+      height: 120px; /* Ajuste específico para móviles */
+    }
+  }
   </style>
 </head>
 <body>

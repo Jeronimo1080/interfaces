@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Seguimiento de Envío</title>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
     <style>
         body {
             margin: 0;
@@ -14,7 +15,7 @@
         }
 
         .main-content {
-            padding: 20px;
+            padding: 22px;
             max-width: 1400px;
             margin: 0 auto;
         }
@@ -44,11 +45,11 @@
         }
 
         .delivery-summary {
-            width: 250px;
+            width: 300px;
             background: white;
-            padding: 25px;
+            padding: 20px;
             border-radius: 12px;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
         }
 
         .summary-title {
@@ -76,9 +77,9 @@
             font-weight: 500;
         }
 
-        .total {
-            margin-top: 30px;
+        .summary-label .total {
             padding-top: 20px;
+            
         }
 
         .total .summary-label {
@@ -96,24 +97,33 @@
     
 
         @media (max-width: 768px) {
-            .tracking-container {
-                flex-direction: column;
-                align-items: center;
-            }
+    .tracking-container {
+        flex-direction: column; /* Apila los elementos en columna */
+        align-items: center;
+        gap: 2rem; /* Reduce el espacio entre elementos */
+    }
 
-            .map-container {
-                width: 100%;
-            }
+    .map-container {
+        width: 100%; /* Ocupa el ancho completo del contenedor */
+        max-width: 350px; /* Limita el tamaño máximo para evitar desbordes */
+        aspect-ratio: 1 / 1; /* Mantiene la proporción cuadrada */
+        overflow: hidden; /* Oculta cualquier contenido que se desborde */
+        border: 1px solid #ccc; /* Opcional: borde para delimitar */
+    }
 
-            .map-container iframe {
-                height: 400px;
-            }
+    .map-container iframe {
+        width: 100%; /* Se ajusta al ancho del contenedor */
+        height: 100%; /* Se adapta para mantener el cuadrado */
+    }
 
-            .delivery-summary {
-                width: 100%;
-                max-width: 350px;
-            }
-        }
+    .delivery-summary {
+        width: calc(100% - 20px); /* Ajusta el ancho para dejar márgenes */
+        max-width: 250px; /* Limita el ancho máximo */
+        box-sizing: border-box; /* Incluye padding y borde en el tamaño */
+        font-size: 12px;
+    }
+}
+
     </style>
 </head>
 <body>
