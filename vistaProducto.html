@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>vista producto</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+      main {
+display: flex;
+flex-direction: column;
+align-items: center;
+padding: 2rem;
+}
+      .distancia{
+        margin: 0;
+        font-size: 12px;
+      }
+      .precio{
+      color: #841F75;
+      font-size: 20px;
+      }
+      h2{
+        color: #1825AA;
+      }
+      .subTitulo{
+        color: #1825AA;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+      }
+    .container {
+    max-width: 1500px;
+    margin: 0 auto;
+    padding: 30px;
+    }
+
+    .image-container {
+      height: auto;
+      width: auto;
+      display: flex;
+      align-items: flex-end;
+      justify-content: center;
+  }
+
+.small-images {
+  display: flex;
+  flex-direction: column; /* Alinea las imágenes pequeñas en columna */
+  margin-right: 20px; /* Espacio entre imágenes pequeñas y la grande */
+}
+
+.small-images img {
+  width: 60px; /* Tamaño de las imágenes pequeñas */
+  height: auto;
+  margin-bottom: 5px; /* Espacio entre las imágenes pequeñas */
+  cursor: pointer;
+  border: 1px solid #ccc; /* Opcional: un borde para las imágenes */
+  border-radius: 5px; /* Opcional: esquinas redondeadas */
+}
+
+.main-image {
+  max-width: 60%; /* Asegura que la imagen grande sea responsive */
+  height: auto;
+}
+
+
+  .main-content {
+   display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 40px;
+  border-bottom: 1px solid black;
+  padding: 20px;
+  }
+
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.quantity-controls {
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+}
+
+.quantity-controls input {
+  width: 50px;
+  text-align: center;
+  margin: 0 10px;
+}
+
+.add-to-cart {
+  margin-bottom: 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  cursor: pointer;
+  width: 50%;
+  border-radius: 15px;
+}
+
+.related-products {
+  margin-top: 40px;
+}
+
+.distancia-container {
+  display: flex; /* Usamos flex para poner el texto y la imagen en línea */
+  align-items: center; /* Alineamos verticalmente en el centro */
+  margin-bottom: 10px; /* Espacio debajo del contenedor */
+}
+
+.distancia {
+  margin: 0;
+  font-size: 12px;
+  flex: 1; /* Hace que el párrafo ocupe el espacio disponible */
+}
+
+.distancia-container img {
+  width: 25px; /* Ajusta el tamaño de la imagen */
+  height: 25px;
+  margin-left: 10px; /* Espacio entre el texto y la imagen */
+}
+
+.cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  column-gap: 12rem;
+  margin-bottom: 2rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: white;
+  padding: 1rem;
+  border-radius: 15px;
+  box-shadow: 0 15px 15px rgba(0, 0, 0, 0.1);
+}
+
+.card img {
+  width: 150px;
+  height: 150px;
+  object-fit: contain;
+  border-radius: 15px;
+  margin-bottom: 1rem;
+}
+
+.card h3 {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card p {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.card button {
+  padding: 0.5rem 1rem;
+  background-color: blue;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  border-radius: 25px;
+}
+
+
+    </style>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height= "120px" frameborder="0"></iframe>
+
+    <div class="container">
+        <div class="main-content">
+         
+            <div class="image-container">
+              <div class="small-images">
+                <img src="images/oilControl2.jpg" alt="Imagen pequeña 1">
+                <img src="images/oilControl3.jpg" alt="Imagen pequeña 2">
+              </div>
+              <img src="images/eucerinMain.jpg" alt="Imagen del producto principal" class="main-image">
+            </div>
+        
+          
+          
+          <div class="product-info">
+            <div class="distancia-container">
+              <p class="distancia">3km de distancia de su hogar</p>
+              <img src="images/favoritos.png" alt="Icono de distancia"> <!-- Aquí colocas tu imagen -->
+            </div>
+            <h2>Protector solar Eucerin Oil Control Toque Seco Tono medio FPS 50 x50ml</h2>
+            <p class="precio">$25.516,00</p>
+            <button class="add-to-cart">Agregar al carrito</button>
+            <h5>Descripcion del producto:</h5>
+            <p>El Protector solar Eucerin Oil Control Sun Gel Toque Seco proporciona protección contra los daños de la piel incluidos por el sol y ayuda a prevenir el fotoenvejecimiento. Además, posee pigmentos de color que favorecen a un tono de piel más uniforme y homogéneo, pudiendo elegir entre un tono claro o medio.</p>
+          </div>
+        </div>
+
+        <h3 class="subTitulo">También te pueden interesar estos productos...</h3>
+        <div class="cards">
+          <div class="card">
+            <img src="images/4.jpg" alt="Product Image">
+            <h3>Dermaglos protector solar bebes fps65 120g</h3>
+            <p class="precio">$25.906,00</p>
+            <button>Agregar</button>
+          </div>
+          <div class="card">
+            <img src="images/5.jpg" alt="Product Image">
+            <h3>Dermaglos protector solar efecto seco 180g</h3>
+            <p class="precio">$23.999,00</p>
+            <button>Agregar</button>
+          </div>
+          <div class="card">
+            <img src="images/6.jpg" alt="Product Image">
+            <h3>Dermaglos Facial Agua Micelar 6 En 1 X 400ml</h3>
+            <p class="precio">$24.568,00</p>
+            <button>Agregar</button>
+          </div>
+      </div>
+    </div>
+
+      <iframe src="footer.html" width="100%" height="220px" frameborder="0"></iframe>
+</body>
+
+</html>
