@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seguimiento de Envío</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            overflow: hidden;
+        }
+
+        .main-content {
+            padding: 20px;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .tracking-container {
+            display: flex;
+            gap: 100px;
+            flex-wrap: wrap;
+            justify-content: center;
+            align-items: flex-start;
+            margin: 18px;
+            
+        }
+
+        .map-container {
+            flex: 1;
+            min-width: 300px;
+            background: white;
+            border-radius: 12px;
+            overflow: hidden;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 500px;
+            border: none;
+        }
+
+        .delivery-summary {
+            width: 250px;
+            background: white;
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+
+        .summary-title {
+            color: #1825AA;
+            font-size: 20px;
+            margin-bottom: 25px;
+            padding-bottom: 15px;
+            border-bottom: 2px solid #f0f0f0;
+            display: flex;
+            justify-content: center;
+        }
+
+        .summary-item {
+            margin-bottom: 20px;
+        }
+
+        .summary-label {
+            font-weight: bold;
+            color: #333;
+        }
+
+        .summary-value {
+            color: #333;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .total {
+            margin-top: 30px;
+            padding-top: 20px;
+        }
+
+        .total .summary-label {
+            font-size: 16px;
+        }
+
+        .total .summary-value {
+            color: #1825AA;
+            font-size: 24px;
+            font-weight: 600;
+        }
+        .total{
+            color: #841F75 !important; 
+        }
+    
+
+        @media (max-width: 768px) {
+            .tracking-container {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .map-container {
+                width: 100%;
+            }
+
+            .map-container iframe {
+                height: 400px;
+            }
+
+            .delivery-summary {
+                width: 100%;
+                max-width: 350px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <iframe src="header.html" width="100%" height="120px" frameborder="0"></iframe>
+    <div class="main-content">
+        <div class="tracking-container">
+            <div class="map-container">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13125.456632530742!2d-58.5628052!3d-34.6707576!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses-419!2sar!4v1730836006326!5m2!1ses-419!2sar" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="delivery-summary">
+                <h2 class="summary-title">Resumen del envío</h2>
+                <div class="summary-item">
+                    <div class="summary-label">Destino</div>
+                    <div class="summary-value">Unlam</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-label">Patente del repartidor</div>
+                    <div class="summary-value">XXX-123</div>
+                </div>
+                <div class="summary-item">
+                    <div class="summary-label">Nombre del repartidor</div>
+                    <div class="summary-value">Pedro</div>
+                </div>
+                <div class="summary-item total">
+                    <div class="summary-label">Total</div>
+                    <div class="summary-value total">$9.000,00</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <iframe src="footer.html" width="100%" height="220px" frameborder="0"></iframe>
+</body>
+</html>

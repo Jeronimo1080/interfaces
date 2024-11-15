@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FarmaClick perfil</title>
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>
+    body {
+      margin: 0;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .main-content {
+      flex: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .container {
+      display: flex;
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: space-evenly;
+      width: 100%;
+      padding: 0 20px;
+    }
+
+    .card {
+      background: white;
+      padding: 20px;
+      border-radius: 16px;
+      width: 350px;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: calc(100vh - 380px); /* Ajusta la altura considerando header y footer */
+    }
+
+    .card-content {
+      flex-grow: 1;
+      overflow-y: auto; /* Permite scroll si el contenido es muy largo */
+    }
+
+    .personal-data-card .card-content {
+      overflow-y: hidden; /* Elimina el scroll solo en esta card */
+    }
+
+    .card-title {
+      color: #1825AA;
+      font-size: 20px;
+      display: flex;
+      justify-content: center;
+      margin-bottom: 20px;
+    }
+
+    .field-label {
+      font-weight: bold;
+      color: #333;
+    }
+
+    .field-value {
+      color: #666;
+      margin-bottom: 15px;
+    }
+
+    .button-container {
+      display: flex;
+      justify-content: center;
+      width: 100%;
+      padding: 15px 0;
+    }
+
+    .button {
+      background-color: #1825AA;
+      color: white;
+      padding: 8px 12px; /* Reducido de 12px a 8px el padding vertical */
+      border: none;
+      border-radius: 25px;
+      width: 80%;
+      cursor: pointer;
+      font-size: 16px;
+      line-height: 1.2; /* Añadido para mejor control de la altura */
+    }
+
+    .button:hover {
+      background-color: #131d8a;
+    }
+
+    .prescription-list {
+      display: flex;
+      flex-direction: column;
+      gap: 15px;
+      margin-bottom: 20px;
+    }
+
+    .prescription-item {
+      position: relative;
+      border-radius: 8px;
+      padding: 10px;
+    }
+
+    .prescription-item img {
+      width: 100%;
+      height: 150px;
+      object-fit: cover;
+      border-radius: 15px;
+    }
+
+    .close-button {
+      position: absolute;
+      right: 10px;
+      top: 10px;
+      background: white;
+      border: none;
+      cursor: pointer;
+      font-size: 18px;
+      width: 24px;
+      height: 24px;
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+
+    .order-item {
+      margin-bottom: 20px;
+    }
+
+    .order-details {
+      margin-bottom: 5px;
+    }
+
+    .details-button {
+      background-color: #1825AA;
+      color: white;
+      padding: 4px 16px;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      font-size: 14px;
+      height: 28px;
+      line-height: 20px;
+    }
+  </style>
+</head>
+<body>
+<iframe src="header.html" width="100%" height="120px" frameborder="0"></iframe>
+
+<div class="main-content">
+  <div class="container">
+    <div class="card personal-data-card">
+      <div class="card-content">
+        <h2 class="card-title">Datos personales</h2>
+        <div>
+          <p class="field-label">Nombre:</p>
+          <p class="field-value">Juan</p>
+          
+          <p class="field-label">Apellido:</p>
+          <p class="field-value">Perez</p>
+          
+          <p class="field-label">Teléfono:</p>
+          <p class="field-value">1133102471</p>
+          
+          <p class="field-label">Correo:</p>
+          <p class="field-value">asd@asd.com</p>
+
+          <p class="field-label">Localidad:</p>
+          <p class="field-value">Morón</p>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="button">Editar</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">Recetas</h2>
+        <div class="prescription-list">
+          <div class="prescription-item">
+            <img src="images/recetaMedica.jpg" alt="Receta 1">
+            <button class="close-button">×</button>
+          </div>
+          <div class="prescription-item">
+            <img src="images/recetaMedica.jpg" alt="Receta 2">
+            <button class="close-button">×</button>
+          </div>
+          <div class="prescription-item">
+            <img src="images/recetaMedica.jpg" alt="Receta 3">
+            <button class="close-button">×</button>
+          </div>
+        </div>
+      </div>
+      <div class="button-container">
+        <button class="button">Subir nueva receta</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <div class="card-content">
+        <h2 class="card-title">Historial de pedidos</h2>
+        <div class="order-item">
+          <p class="order-details">Pedido #123</p>
+          <p class="order-details">Fecha: 05/11/2024</p>
+          <p class="order-details">Estado: entregado</p>
+          <button class="details-button">Ver detalles</button>
+        </div>
+        <div class="order-item">
+          <p class="order-details">Pedido #124</p>
+          <p class="order-details">Fecha: 06/11/2024</p>
+          <p class="order-details">Estado: entregado</p>
+          <button class="details-button">Ver detalles</button>
+        </div>
+        <div class="order-item">
+            <p class="order-details">Pedido #125</p>
+            <p class="order-details">Fecha: 07/11/2024</p>
+            <p class="order-details">Estado: pendiente</p>
+            <button class="details-button">Ver detalles</button>
+          </div>
+      </div>
+      <div class="button-container">
+        <button class="button">Ver más</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<iframe src="footer.html" width="100%" height="220px" frameborder="0"></iframe>
+</body>
+</html>
