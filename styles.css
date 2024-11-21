@@ -1,6 +1,8 @@
 /* Estilos generales */
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&display=swap');
+
   body {
-    font-family: Arial, sans-serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 0;
     padding: 0;
     overflow: hidden; 
@@ -351,6 +353,13 @@
 }
 
 /* Responsive Design */
+@media screen and (max-width: 1024px) {
+  .pago label {
+    display: block; 
+    margin-right: 0; 
+    margin-bottom: 10px; 
+}
+}
 @media screen and (max-width: 768px) {
   .cart-content {
       flex-direction: column;
@@ -431,9 +440,11 @@
     .dynamic-search-bar {
         display: flex!important;  /* Muestra el buscador */
         justify-content: center!important; /* Centra el buscador */
+        align-items: center!important; ;  
         margin-bottom: 20px!important; /* Opcional: Espacio superior */
         width: 300px!important;
     }
+
 }
 
 @media screen and (min-width: 769px) {
@@ -441,4 +452,70 @@
         display: none!important;  /* Oculta el buscador en pantallas grandes */
     }
 }
+
+/*INDEX RESPONSIVE*/
+
+@media (max-width: 700px) {
+  /* se ponen solo 2 columnas */
+  .containerDestacados {
+  grid-template-columns: repeat(2, 1fr); 
+  gap: 2rem;
+  margin: 2rem;
+  }
+  /* se achican las cards */
+  .product-card {
+  font-size: 14px; 
+  padding: 5px; 
+  width: 100%;
+  }
+  /* se achican los titulos */
+  .titulo{
+    font-size: 1.5rem;
+  }
+  /* se sacan las fotos de ofertas destacadas */
+  .ofertas-container .item2, 
+  .ofertas-container .item3, 
+  .ofertas-container .item4, 
+  .ofertas-container .item5 {
+  display: none;
+  }
+  /* Aseguramos que el contenedor de ofertas sea un bloque y no grid */
+  .ofertas-container {
+  margin: 0;
+  display: block; /* Cambiamos el layout a bloque */
+  width: 100%; /* Aseguramos que ocupe todo el ancho */
+  }
+
+  /* Hacemos que el primer item ocupe todo el ancho */
+  .ofertas-container .item1 {
+  width: 100%; /* Hace que el item1 ocupe el 100% del ancho */
+  padding: 0;  /* Elimina el padding si es necesario */
+  }
+
+  /* Hacemos que la imagen dentro de .item1 también ocupe todo el ancho */
+  .ofertas-container .item1 img {
+  width: 100%;  /* La imagen ocupa todo el ancho del contenedor */
+  height: auto;  /* La altura se ajusta automáticamente para mantener la proporción */
+  }
+
+  /* se sacan las fotos de las marcas que ofrecemos */
+  .carousel a:nth-child(3) {
+  display: none;
+  }
+
+  .carousel a:nth-child(4) {
+  display: none;
+  }
+
+  .carousel a:nth-child(5) {
+  display: none;
+  }
+  .carousel img{
+  width: 100px;
+  height: 100px;
+  }
+  .product-card h3{
+  font-size: 15px;
+  }
+  }
 

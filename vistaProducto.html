@@ -67,10 +67,9 @@ padding: 2rem;
 
 
   .main-content {
-   display: grid;
+  display: grid;
   grid-template-columns: 1fr 1fr;
   grid-gap: 40px;
-  border-bottom: 1px solid black;
   padding: 20px;
   }
 
@@ -172,6 +171,22 @@ padding: 2rem;
   border-radius: 25px;
 }
 
+.quantity {
+      font-weight: bold;
+      border: 1px solid black; 
+      border-radius: 20px; 
+      padding: 8px; 
+      width: 60px; 
+      text-align: center; 
+      outline: none; 
+      transition: all 0.3s ease; 
+    }
+
+    /* Efecto al enfocar el input */
+    .quantity:focus {
+      border-color: #0056b3; /* Cambia el color del borde */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+    }
 @media (max-width: 767px) {
             .main-content {
                 grid-template-columns: 1fr;
@@ -218,7 +233,7 @@ padding: 2rem;
     </style>
 </head>
 <body>
-    <iframe src="header.html" width="100%" height= "120px" frameborder="0"></iframe>
+    <a href="index.html"><iframe src="header.html" width="100%" height= "120px" frameborder="0"></iframe></a>
 
     <div class="container">
         <div class="main-content">
@@ -240,31 +255,33 @@ padding: 2rem;
             </div>
             <h2>Protector solar Eucerin Oil Control Toque Seco Tono medio FPS 50 x50ml</h2>
             <p class="precio">$25.516,00</p>
-            <button class="add-to-cart">Agregar al carrito</button>
+            <div class="controls">
+              <input type="number" value="1" class="quantity" min="1">
+              <a href="carrito.html"><button class="add-to-cart">Agregar al carrito</button></a>   </div>
             <h5>Descripcion del producto:</h5>
             <p>El Protector solar Eucerin Oil Control Sun Gel Toque Seco proporciona protección contra los daños de la piel incluidos por el sol y ayuda a prevenir el fotoenvejecimiento. Además, posee pigmentos de color que favorecen a un tono de piel más uniforme y homogéneo, pudiendo elegir entre un tono claro o medio.</p>
           </div>
         </div>
-
+<hr>
         <h3 class="subTitulo">Te pueden interesar estos productos...</h3>
         <div class="cards">
           <div class="card">
             <img src="images/4.jpg" alt="Product Image">
             <h3>Dermaglos protector solar bebes fps65 120g</h3>
             <p class="precio">$25.906,00</p>
-            <button>Agregar</button>
+            <a href="carrito.html"><button>Agregar</button></a>
           </div>
           <div class="card">
             <img src="images/5.jpg" alt="Product Image">
             <h3>Dermaglos protector solar efecto seco 180g</h3>
             <p class="precio">$23.999,00</p>
-            <button>Agregar</button>
+            <a href="carrito.html"><button>Agregar</button></a>
           </div>
           <div class="card">
             <img src="images/6.jpg" alt="Product Image">
             <h3>Dermaglos Facial Agua Micelar 6 En 1 X 400ml</h3>
             <p class="precio">$24.568,00</p>
-            <button>Agregar</button>
+            <a href="carrito.html"><button>Agregar</button></a>
           </div>
       </div>
     </div>

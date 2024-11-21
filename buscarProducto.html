@@ -82,6 +82,23 @@ padding: 2rem;
   border-radius: 25px;
 }
 
+.quantity {
+      font-weight: bold;
+      border: 1px solid black; 
+      border-radius: 20px; 
+      padding: 8px; 
+      width: 60px; 
+      text-align: center; 
+      outline: none; 
+      transition: all 0.3s ease; 
+    }
+
+    /* Efecto al enfocar el input */
+    .quantity:focus {
+      border-color: #0056b3; /* Cambia el color del borde */
+      box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Sombra azul */
+    }
+
 /* pantallas medianas: cambiar a 2 columnas */
 @media (max-width: 1024px) {
   .cards {
@@ -132,7 +149,7 @@ padding: 2rem;
     <main>
         <div class="w3-col s4 w3-center dynamic-search-bar" style="display: none;">
     <input type="text" placeholder="¿Qué estás buscando?" class="w3-border w3-round-xxlarge"
-           style="height: 40px; 
+           style="height: 40px; width: 250px;
                   background-image: url('images/busqueda.png'); 
                   background-repeat: no-repeat; 
                   background-position: right 10px center; 
@@ -144,40 +161,57 @@ padding: 2rem;
         </div>
         <div class="cards">
           <div class="card">
-            <img src="images/10.jpg" alt="Product Image">
+           <a href="vistaProducto.html"><img src="images/10.jpg" alt="Product Image"></a>
             <h3>Protector Solar Dermaglos Fps 40 X 250ml</h3>
             <p class="precio">$24.568,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+              <input type="number" value="1" class="quantity" min="1">
+              <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
+
           <div class="card">
-            <img src="images/2.jpg" alt="Product Image">
-            <h3>Dermaglos Serum Facial Vitamina C 25ml</h3>
+            <a href="vistaProducto.html"><img src="images/2.jpg" alt="Product Image"></a>
+            <h3>Dermaglos Serum Facial Vitamina C x 25ml</h3>
             <p class="precio">$25.516,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+            <input type="number" value="1" class="quantity" min="1">
+            <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
+
           <div class="card">
-            <img src="images/3.jpg" alt="Product Image">
+            <a href="vistaProducto.html"><img src="images/3.jpg" alt="Product Image"></a>
             <h3>Dermaglos Serum Facial Niacinamida 30ml</h3>
             <p class="precio">$24.406,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+              <input type="number" value="1" class="quantity" min="1">
+              <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
+          
           <div class="card">
-            <img src="images/4.jpg" alt="Product Image">
+            <a href="vistaProducto.html"><img src="images/4.jpg" alt="Product Image"></a>
             <h3>Dermaglos protector solar bebes fps65 120g</h3>
             <p class="precio">$25.906,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+              <input type="number" value="1" class="quantity" min="1">
+              <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
+
           <div class="card">
-            <img src="images/5.jpg" alt="Product Image">
+            <a href="vistaProducto.html"><img src="images/5.jpg" alt="Product Image"></a>
             <h3>Dermaglos protector solar efecto seco 180g</h3>
             <p class="precio">$23.999,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+              <input type="number" value="1" class="quantity" min="1">
+              <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
+
           <div class="card">
-            <img src="images/6.jpg" alt="Product Image">
+            <a href="vistaProducto.html"></a><img src="images/6.jpg" alt="Product Image"></a>
             <h3>Dermaglos Facial Agua Micelar 6 En 1 X 400ml</h3>
             <p class="precio">$24.568,00</p>
-            <button>Agregar</button>
+            <div class="controls">
+            <input type="number" value="1" class="quantity" min="1">
+            <a href="carrito.html"><button>Agregar</button></a>   </div>
           </div>
         </div>
       </main>
