@@ -399,4 +399,46 @@
   }
 }
 
+/* Responsive para el header */
+@media screen and (max-width: 768px) {
+  /* Ocultar el buscador y el nav */
+  .w3-col.s4.w3-center,nav{
+    display: none;
+    }
+        
+  /* Reducir tamaño del logo y ajustar texto */
+    header .logo {
+    height: 25px !important; 
+    width: auto !important; 
+    }
+          
+    header h4 {
+    font-size: 12px;
+    }
+  
+    header .w3-col.s4:first-child {
+    justify-content: center !important;
+    margin-bottom: 50px; /* Espacio entre el logo y los otros elementos */
+    }
+      
+    header .w3-col.s4:last-child {
+    justify-content: center !important; 
+    margin-top: 20px; 
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .dynamic-search-bar {
+        display: flex!important;  /* Muestra el buscador */
+        justify-content: center!important; /* Centra el buscador */
+        margin-bottom: 20px!important; /* Opcional: Espacio superior */
+        width: 300px!important;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    .dynamic-search-bar {
+        display: none!important;  /* Oculta el buscador en pantallas grandes */
+    }
+}
 
